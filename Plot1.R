@@ -14,4 +14,3 @@ hist(Feb$Global_active_power, ylim = c(0, 1200), breaks = 12,
 dev.off()
 #save as Plot1.png
 #code saved as Plot1.r
-

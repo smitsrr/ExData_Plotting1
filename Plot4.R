@@ -8,7 +8,6 @@ energy$Time <- chron(times = energy$Time)
 energy$Date <- as.Date(energy$Date, format = "%d/%m/%Y")
 Feb <- subset(energy, Date == '2007-02-01' | Date == '2007-02-02')
 
-
 concat <- paste(Feb$Date, Feb$Time,sep=' ') # concatenating date and time to convert it to a time format
 totime <- strptime(concat,"%Y-%m-%d %H:%M:%S")
 Feb2 <- cbind(Feb, totime)
@@ -39,5 +38,4 @@ legend("topright", lty = 1, col = c("Black", "Red", "blue"),
 plot(Feb2$totime, Feb2$Global_reactive_power, lwd = 1,  
      xlab = "Date Time", type = "n")
 lines(Feb2$totime, Feb2$Global_reactive_power)
-
 dev.off()

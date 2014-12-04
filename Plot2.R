@@ -1,5 +1,3 @@
-#Hav to got back to PLot 1 to save with the right pixel counts!!!! 
-
 #Plot 2 for Assignment 1
 library(chron)
 download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", 
